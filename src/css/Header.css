@@ -1,0 +1,30 @@
+#head {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 14pt;
+    background: rgb(224, 174, 238);
+    background: radial-gradient(circle, rgba(224, 174, 238, 1) 53%, rgba(123, 125, 226, 1) 100%);
+}
+
+.column {
+    padding: 5px;
+    width: 30%;
+}
+
+.column p {
+    margin: 5px;
+}
+
+.column .header {
+    font-weight: bold;
+}
+
+#head p:hover {
+    color: #FFE53F;
+    transition-duration: 0.5s;
+    transform: rotateX(360deg);
+}

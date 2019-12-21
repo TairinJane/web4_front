@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  background: #f4e6f8;
+  font-family: Century Gothic, Arial, sans-serif;
+  color: #3C1362;
+  text-align: center;
+}
+
+::selection {
+  background: azure;
+  color: blue;
+}
+
+.content {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#clock {
+  font-weight: bold;
+}
+
+h1 {
+  margin: 10px;
+}
+
+p {
+  font-size: 20px;
+  margin: 15px;
+}
