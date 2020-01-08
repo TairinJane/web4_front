@@ -1,44 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="852800c3-3c65-4d6e-a9b6-b650fe1d5a96" name="Default Changelist" comment="Connect form with state">
-      <change afterPath="$PROJECT_DIR$/src/components/AdminPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AdminPanel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PageNotFound.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PrivateRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UserLogOut.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/AuthUserForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/RegistrationPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/WelcomeForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/points/PointCanvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/points/PointsForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/points/PointsPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/points/PointsTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/pointsPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/userReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/axiosSettings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/history.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+    <list default="true" id="852800c3-3c65-4d6e-a9b6-b650fe1d5a96" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WelcomeForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/WelcomeForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/WelcomeForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/check.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/formReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/pointReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers/AppRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/AppRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/RegistrationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/RegistrationPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/WelcomeForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/WelcomeForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/points/PointsForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/points/PointsForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/pointReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/pointReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/userReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +113,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Connect form with state" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connect form with state" />
+    <MESSAGE value="Full adaptive design" />
+    <option name="LAST_COMMIT_MESSAGE" value="Full adaptive design" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="247" y="67" key="#Plugins" timestamp="1577282340460">
@@ -154,26 +127,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="141" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1577282246826" />
-    <state x="389" y="0" key="CommitChangelistDialog2" timestamp="1578481705385">
+    <state x="389" y="0" key="CommitChangelistDialog2" timestamp="1578490824100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="389" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578481705385" />
-    <state width="1114" height="207" key="GridCell.Tab.0.bottom" timestamp="1578486620365">
+    <state x="389" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578490824100" />
+    <state width="1114" height="207" key="GridCell.Tab.0.bottom" timestamp="1578490843477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1114" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578486620365" />
-    <state width="1114" height="207" key="GridCell.Tab.0.center" timestamp="1578486620365">
+    <state width="1114" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578490843477" />
+    <state width="1114" height="207" key="GridCell.Tab.0.center" timestamp="1578490843477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1114" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578486620365" />
-    <state width="1114" height="207" key="GridCell.Tab.0.left" timestamp="1578486620365">
+    <state width="1114" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578490843477" />
+    <state width="1114" height="207" key="GridCell.Tab.0.left" timestamp="1578490843477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1114" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578486620365" />
-    <state width="1114" height="207" key="GridCell.Tab.0.right" timestamp="1578486620365">
+    <state width="1114" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578490843477" />
+    <state width="1114" height="207" key="GridCell.Tab.0.right" timestamp="1578490843477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1114" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578486620365" />
+    <state width="1114" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578490843477" />
     <state x="275" y="126" width="972" height="575" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1578475334128">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

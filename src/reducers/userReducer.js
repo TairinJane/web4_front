@@ -58,6 +58,11 @@ export default function userReducer(state = {}, action) {
                 ...state,
                 serverError: action.serverError,
             };
+        case 'RESET_ERROR':
+            return {
+                ...state,
+                serverError: action.serverError
+            };
         default:
             return state;
     }

@@ -17,7 +17,6 @@ export default function pointReducer(state = {}, action) {
             console.log(action.type);
             return {
                 ...state,
-                serverSuccess: action.serverSuccess,
                 serverError: action.serverError
             };
         case 'GET_POINTS_SUCCESS':
@@ -29,6 +28,11 @@ export default function pointReducer(state = {}, action) {
             return {
                 ...state,
                 points: [...action.points, ...state.points]
+            };
+        case 'RESET_ERROR':
+            return {
+                ...state,
+                serverError: action.serverError
             };
         default:
             return state;

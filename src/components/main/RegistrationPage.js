@@ -1,9 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {register} from '../../actions/actions';
+import {register, resetError} from '../../actions/actions';
 import '../../css/WelcomeForm.css'
-import store from '../../utils/store';
 import {NavLink} from "react-router-dom";
+import {Growl} from "primereact/growl";
 
 class RegistrationPage extends React.Component {
     constructor(props) {
@@ -24,8 +24,14 @@ class RegistrationPage extends React.Component {
         event.preventDefault();
         const {username, password} = this.state;
         this.props.onSubmit(username, password);
-        console.log(store.getState())
+        this.props.onResetError();
     };
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.props.serverError && prevProps.serverError !== this.props.serverError) {
+            this.growl.show({severity: 'error', summary: 'Server error', detail: this.props.serverError});
+        }
+    }
 
     render() {
         return <div className="content">
@@ -42,18 +48,19 @@ class RegistrationPage extends React.Component {
                     <button type="submit">Sign up</button>
                     <p>I wan to <NavLink to='/'>sign in</NavLink></p>
                 </form>
+                <Growl ref={(el) => this.growl = el} className='validationError'/>
             </div>
         </div>
     }
 }
 
 const mapStateToProps = state => ({
-    isAuthenticated: state.user.isAuthenticated,
-    serverAnswer: state.user.serverAnswer
+    serverError: state.user.serverError
 });
 
 const mapDispatchToProps = dispatch => ({
-    onSubmit: (username, password) => dispatch(register(username, password))
+    onSubmit: (username, password) => dispatch(register(username, password)),
+    onResetError: () => dispatch(resetError()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(RegistrationPage)

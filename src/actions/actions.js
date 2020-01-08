@@ -70,7 +70,6 @@ export const logOut = () => {
     return dispatch => {
         axios.get(`/logout`)
             .then(response => {
-                console.log(response);
                 dispatch(logOutSuccess());
                 history.push('/');
             })
@@ -97,7 +96,7 @@ export const authenticate = (username, password) => {
             })
             .catch(error => {
                 if (error.response) {
-                    dispatch(authError(error.response.data));
+                    dispatch(authError("Wrong username or password"));
                 } else
                     dispatch(authError(error.message));
             });
@@ -117,7 +116,6 @@ export const register = (username, password) => {
                 history.push('/');
             })
             .catch(error => {
-                console.log(error.message);
                 if (error.response) {
                     dispatch(registrationError(error.response.data));
                 } else
@@ -218,5 +216,12 @@ export const logOutSuccess = () => {
         username: null,
         serverError: null,
         isAuthenticated: false,
+    }
+};
+
+export const resetError = () => {
+    return {
+        type: 'RESET_ERROR',
+        serverError: null,
     }
 };

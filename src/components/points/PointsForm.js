@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import store from '../../utils/store';
 import {RadioButton} from 'primereact/radiobutton';
 import {InputText} from 'primereact/inputtext';
-import {addPoint, changeR, getPoints} from '../../actions/actions'
+import {addPoint, changeR, getPoints, resetError} from '../../actions/actions'
 import {Growl} from "primereact/growl";
 
 class PointsForm extends React.Component {
@@ -29,7 +29,7 @@ class PointsForm extends React.Component {
             const {x, y, r} = this.state;
             const result = this.checkArea(+x, +y, +r);
             this.props.onSubmit(+x, +y, +r, '' + result);
-            console.log(store.getState())
+            this.props.onResetError();
         }
     };
 
@@ -130,13 +130,13 @@ const mapStateToProps = state => ({
     y: state.point.y,
     r: state.point.r,
     serverError: state.point.serverError,
-    serverSuccess: state.point.serverSuccess
 });
 
 const mapDispatchToProps = dispatch => ({
     onSubmit: (x, y, r, result) => dispatch(addPoint(x, y, r, result)),
     onChangeR: (r) => dispatch(changeR(r)),
     getUserPoints: () => dispatch(getPoints()),
+    onResetError: () => dispatch(resetError()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PointsForm)

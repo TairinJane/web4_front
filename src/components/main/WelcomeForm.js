@@ -1,8 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {authenticate} from '../../actions/actions';
+import {authenticate, resetError} from '../../actions/actions';
 import '../../css/WelcomeForm.css'
-import store from '../../utils/store';
 import {NavLink} from "react-router-dom";
 import {Growl} from "primereact/growl";
 
@@ -25,8 +24,14 @@ class WelcomeForm extends React.Component {
         event.preventDefault();
         const {username, password} = this.state;
         this.props.onSubmit(username, password);
-        console.log(store.getState())
+        this.props.onResetError();
     };
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.props.serverError && prevProps.serverError !== this.props.serverError) {
+            this.growl.show({severity: 'error', summary: 'Server error', detail: this.props.serverError});
+        }
+    }
 
     render() {
         return <div id="form">
@@ -41,7 +46,6 @@ class WelcomeForm extends React.Component {
                 <br/>
                 <button type="submit">Sign in</button>
                 <p>I want to <NavLink to='/registration'>register</NavLink></p>
-                {/*<p>Auth result: {"" + this.props.isAuthenticated}</p>*/}
             </form>
             <Growl ref={(el) => this.growl = el} className='validationError'/>
         </div>
@@ -56,6 +60,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     onSubmit: (username, password) => dispatch(authenticate(username, password)),
+    onResetError: () => dispatch(resetError()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(WelcomeForm)
