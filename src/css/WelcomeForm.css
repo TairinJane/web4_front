@@ -1,22 +1,24 @@
 #form {
+    font-size: 16pt;
 }
 
-input[type=text] {
+input[type=text], input[type=password], .p-inputtext:enabled {
     width: 40%;
     border-radius: 2px;
     padding: 4px;
-    font-size: 16px;
+    font-size: 14pt;
     outline: none;
     border: 1px solid lightslategrey;
     margin: 5px 10px;
     transition-duration: 0.3s;
 }
 
-input[type=text]:focus {
+input[type=text]:focus, input[type=password]:focus, .p-inputtext:enabled:focus {
     border: 1px solid navy;
+    box-shadow: none;
 }
 
-button {
+button[type=submit] {
     text-decoration: none;
     font-size: 20pt;
     width: auto;
@@ -31,8 +33,14 @@ button {
     transition-duration: 0.3s;
 }
 
-button:hover {
+button[type=submit]:hover {
     background: white;
     border: 2px solid darkviolet;
     color: darkviolet;
+}
+
+@media (max-width: 841px) {
+    #form input {
+        width: 80%;
+    }
 }

@@ -1,0 +1,118 @@
+#container .p-inputtext:enabled:focus {
+    box-shadow: none;
+    border-color: navy;
+}
+
+#container .p-component {
+    font-family: Century Gothic, Arial, sans-serif;
+}
+
+#container .p-inputtext {
+    color: #3C1362;;
+}
+
+#container {
+    font-size: 16pt;
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+}
+
+#container h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#container .p-radiobutton-box {
+    margin: auto;
+}
+
+canvas {
+    border: 1px solid navy;
+    border-radius: 4px;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#dataTable table {
+    padding: 5px;
+    border-collapse: collapse;
+    width: 70%;
+    margin: 10px auto;
+    font-size: 16pt;
+}
+
+#dataTable th {
+    font-weight: bold;
+}
+
+#dataTable td, th, tr {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid darkviolet;
+    font-family: Century Gothic, Arial, sans-serif;
+    color: #3C1362;
+}
+
+#pointsForm {
+    width: 40%;
+}
+
+.radioGroup {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.radioGroup .p-radiobutton {
+    margin: auto;
+    width: 11%;
+}
+
+.radioGroup label {
+    margin: 5px auto;
+    width: 11%;
+}
+
+.validationError {
+    color: red;
+}
+
+#Yinput {
+    width: 95%;
+}
+
+@media (max-width: 841px) {
+    #pointsForm {
+        width: 90%;
+        margin: auto;
+    }
+
+    #container {
+        flex-direction: column;
+        font-size: 14pt;
+    }
+
+    #dataTable table {
+        width: 95%;
+        font-size: 12pt;
+    }
+
+    canvas {
+        margin: auto;
+    }
+}
+
+@media (min-width: 841px) and  (min-width: 841px) {
+    #pointsForm {
+        width: 40%;
+        margin: auto;
+    }
+
+    canvas {
+        width: 50%;
+    }
+}

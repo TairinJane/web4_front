@@ -1,6 +1,8 @@
 import {combineReducers} from 'redux';
-import formReducer from "./formReducer";
+import userReducer from "./userReducer";
+import pointReducer from "./pointReducer";
 
 export default combineReducers({
-    user: formReducer,
+    user: userReducer,
+    point: pointReducer
 });

@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import './css/index.css';
-import App from './components/App.js'
-import store from './store.js'
+import store from './utils/store.js'
+import AppRouter from "./routers/AppRouter";
 
 ReactDOM.render(<Provider store={store}>
-        <App/>
+        <AppRouter/>
     </Provider>,
     document.getElementById('root'));

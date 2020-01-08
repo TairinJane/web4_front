@@ -12,7 +12,7 @@
 
 .column {
     padding: 5px;
-    width: 30%;
+    width: 24%;
 }
 
 .column p {
@@ -27,4 +27,19 @@
     color: #FFE53F;
     transition-duration: 0.5s;
     transform: rotateX(360deg);
+}
+
+#logOutButton {
+    font-size: 12pt;
+    margin: 5px auto;
+}
+
+@media (max-width: 841px) {
+    .hide {
+        display: none;
+    }
+
+    .column:not(.hide) {
+        width: 50%;
+    }
 }
