@@ -25,3 +25,5 @@ yarn-error.log*
 
 pip4_front.iml
 public/.htacess
+.idea
+*.iml

@@ -91,13 +91,11 @@ class PointCanvas extends React.Component {
     canvasClick = (event) => {
         let canvasCenter = this.canvas.clientWidth / 2;
         let {x, y} = this.getCursorPosition(event);
-        console.log(this.canvas.clientWidth, x, y);
         x -= canvasCenter;
         y -= canvasCenter;
         y = -y;
         x = x / (canvasCenter / 2) * this.props.r;
         y = y / (canvasCenter / 2) * this.props.r;
-        console.log(x, y);
         this.props.addPoint(x, y, this.props.r, '' + this.checkArea(x, y, this.props.r))
     };
 

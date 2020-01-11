@@ -1,6 +1,5 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import store from '../../utils/store';
 import {RadioButton} from 'primereact/radiobutton';
 import {InputText} from 'primereact/inputtext';
 import {addPoint, changeR, getPoints, resetError} from '../../actions/actions'
@@ -44,7 +43,6 @@ class PointsForm extends React.Component {
     RChange = (event) => {
         this.setState({r: event.value});
         this.props.onChangeR(+event.value);
-        console.log(store.getState())
     };
 
     checkArea = (x, y, r) => {
