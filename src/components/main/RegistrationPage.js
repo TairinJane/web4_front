@@ -46,7 +46,7 @@ class RegistrationPage extends React.Component {
                            onChange={this.passwordChange}/>
                     <br/>
                     <button type="submit">Sign up</button>
-                    <p>I wan to <NavLink to='/'>sign in</NavLink></p>
+                    <p>I wan to <NavLink to='/login'>sign in</NavLink></p>
                 </form>
                 <Growl ref={(el) => this.growl = el} className='validationError'/>
             </div>

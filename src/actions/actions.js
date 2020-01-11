@@ -71,7 +71,7 @@ export const logOut = () => {
         axios.get(`/logout`)
             .then(response => {
                 dispatch(logOutSuccess());
-                history.push('/');
+                history.push('/login');
             })
             .catch(error => {
                 if (error.response) {
@@ -113,7 +113,7 @@ export const register = (username, password) => {
             .then(response => {
                 console.log(response.status);
                 dispatch(registrationSuccess(response.data));
-                history.push('/');
+                history.push('/login');
             })
             .catch(error => {
                 if (error.response) {
